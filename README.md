@@ -8,6 +8,10 @@ variables that can be used to customize installation:
     go_platform   - os and architecture
     go_parent_dir - directory to store go versions
 
+The role does no set any environment variables. With the adoption of go modules need to set GOPATH should be reduced in the future.
+
+The go_parent_dir variable may change from being relative to absolute in the future.
+
 ## History
 
 |Version|Description|
