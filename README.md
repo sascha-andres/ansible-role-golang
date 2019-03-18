@@ -16,4 +16,5 @@ The go_parent_dir variable may change from being relative to absolute in the fut
 
 |Version|Description|
 |---|---|
+|0.1.1|fix: create go_parent_dir if it does not exist|
 |0.1.0|initial release|
