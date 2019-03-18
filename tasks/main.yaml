@@ -39,7 +39,7 @@
         dest: '/tmp/go/extracted'
         creates: '/tmp/go/extracted/go'
     - name: move to location
-      raw: mv /tmp/go/extracted/go {{ ansible_env.HOME }}/{{ go_parent_dir }}/{{ go_ver }}
+      raw: mkdir -p {{ ansible_env.HOME }}/{{ go_parent_dir }} && mv /tmp/go/extracted/go {{ ansible_env.HOME }}/{{ go_parent_dir }}/{{ go_ver }}
   always:
     - name: cleanup
       file:
