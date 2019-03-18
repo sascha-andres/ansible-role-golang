@@ -19,7 +19,7 @@
   changed_when: False
   register: go_install_path
 
-- name: Golang - install
+- name: Golang - install specific version
   when: not go_install_path.stat.exists
   block:
     - name: download go archive...
@@ -28,22 +28,29 @@
         dest: /tmp/{{ go_tgz }}
         checksum: '{{ go_checksum }}'
         mode: '0644'
+    - name: create temp directory ...
+      file:
+        path: /tmp/go/extracted
+        state: directory
     - name: unarchive go...
       unarchive:
         copy: no
         src: /tmp/{{ go_tgz }}
-        dest: '/tmp/go/extracted/{{ go_tgz }}'
+        dest: '/tmp/go/extracted'
         creates: '/tmp/go/extracted/go'
     - name: move to location
       raw: mv /tmp/go/extracted/go {{ ansible_env.HOME }}/{{go_parent_dir}}/{{ go_ver }}
-      creates: '{{ ansible_env.HOME }}/{{go_parent_dir}}/{{ go_ver }}'
   always:
     - name: cleanup
-      become: '{{ go_privilege_escalation }}'
-      become_user: root
       file:
         path: /tmp/{{ item }}
         state: absent
       loop:
-        - {{ go_tgz }}
+        - "{{ go_tgz }}"
         - go
+
+- name: link go version ...
+  file:
+    src: '{{ ansible_env.HOME }}/{{go_parent_dir}}/{{ go_ver }}'
+    dest: '{{ ansible_env.HOME }}/{{go_parent_dir}}/current'
+    state: link
