@@ -42,7 +42,7 @@
       file:
         path: "{{ ansible_env.HOME }}/{{ go_parent_dir }}"
         state: directory
-        craetes: "{{ ansible_env.HOME }}/{{ go_parent_dir }}"
+        creates: "{{ ansible_env.HOME }}/{{ go_parent_dir }}"
     - name: move to location
       raw: mv /tmp/go/extracted/go {{ ansible_env.HOME }}/{{ go_parent_dir }}/{{ go_ver }}
   always:
