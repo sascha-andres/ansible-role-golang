@@ -16,6 +16,7 @@ The go_parent_dir variable may change from being relative to absolute in the fut
 
 |Version|Description|
 |---|---|
+|0.2.7|add 1.12.7|
 |0.2.6|add 1.12.6 and 1.11.11|
 |0.2.5|add go 1.12.5|
 |0.2.4|fix dict key for 1.12.4|
