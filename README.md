@@ -16,6 +16,7 @@ The go_parent_dir variable may change from being relative to absolute in the fut
 
 |Version|Description|
 |---|---|
+|0.2.11|remove unused template|
 |0.2.10|add 1.13.1|
 ||add 1.12.10|
 |0.2.9|add 1.13|
