@@ -1,5 +1,5 @@
 ---
-go_ver: '1.15'
+go_ver: '1.15.1'
 go_platform: linux-amd64
 
 # https://golang.org/dl/
@@ -156,9 +156,17 @@ go_checksums:
     darwin-amd64: sha256:9a71abeb3de60ed33c0f90368be814d140bc868963e90fbb98ea665335ffbf9a
     linux-amd64: sha256:4a7fa60f323ee1416a4b1425aefc37ea359e9d64df19c326a58953a97ad41ea5
     windows-amd64: sha256:2e0da6cc37b235f3bdeb91549ffeebe669391dadde7ff8d9da1921103dbfcb7b
+  '1.14.8':
+    darwin-amd64: sha256:6fbfdca4e876477f1cb54df09b310e95f335e1d49556fe5c75bca02159b94c63
+    linux-amd64: sha256:5504e077a29d0bd6649ca7b66e317f1a4b264e960f74115d6f0f405c49a8e738
+    windows-amd64: sha256:f0fb99ef42f4b5cc021e48c442eb4c71b2ee7790ed1c3c7a2c5315248536fe98
   '1.15':
     darwin-amd64: sha256:8a5fb9c8587854a84957a79b9616070b63d8842d4001c3c7d86f261cd7b5ffb6
     linux-amd64: sha256:2d75848ac606061efe52a8068d0e647b35ce487a15bb52272c427df485193602
     windows-amd64: sha256:02944771ca3cffe7bcda85c6ec16eb6dac94e4b1c877cceb610ecab92d4e0a32
+  '1.15.1':
+    darwin-amd64: sha256:b33341df847b4a48da40d957437c87642d221dde28c6f810b1ce26b74be2f661
+    linux-amd64: sha256:70ac0dbf60a8ee9236f337ed0daa7a4c3b98f6186d4497826f68e97c0c0413f6
+    windows-amd64: sha256:8e3e1e35e03af28d974ad872883884a4c544f6bdb2e2edb1126d6b528d017696
 
 go_parent_dir: .local/go
