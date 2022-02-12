@@ -1,5 +1,5 @@
 ---
-go_ver: '1.17.6'
+go_ver: '1.17.7'
 go_platform: linux-amd64
 
 # https://golang.org/dl/
