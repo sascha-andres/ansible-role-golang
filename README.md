@@ -16,7 +16,9 @@ The go_parent_dir variable may change from being relative to absolute in the fut
 
 |Version|Description|
 |---|---|
-|1.17.6|- support for 1.17.7|
+|1.17.8|- support for 1.17.8|
+||- support for 1.16.15|
+|1.17.7|- support for 1.17.7|
 ||- support for 1.16.14|
 |1.17.6|-support for go 1.17.5 and 1.17.6|
 ||- support for go 1.16.12 and 1.16.13|
