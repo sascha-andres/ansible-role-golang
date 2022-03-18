@@ -1,5 +1,5 @@
 ---
-go_ver: '1.17.8'
+go_ver: '1.18'
 go_platform: linux-amd64
 
 # https://golang.org/dl/
@@ -381,5 +381,12 @@ go_checksums:
     linux-arm64: sha256:57a9171682e297df1a5bd287be056ed0280195ad079af90af16dcad4f64710cb
     windows-amd64: sha256:85ccf2608dca6ea9a46b6538c9e75e7cf2aebdf502379843b248e26b8bb110be
     windows-arm64: sha256:4a0d960f5c0cbff1edaf54f333cf857a2779f6ae4c8e759b7872b44fde5ae43f
+  '1.18':
+    darwin-amd64: sha256:70bb4a066997535e346c8bfa3e0dfe250d61100b17ccc5676274642447834969
+    darwin-arm64: sha65:9cab6123af9ffade905525d79fc9ee76651e716c85f1f215872b5f2976782480
+    linux-amd64: sha256:e85278e98f57cdb150fe8409e6e5df5343ecb13cebf03a5d5ff12bd55a80264f
+    linux-arm64: sha256:7ac7b396a691e588c5fb57687759e6c4db84a2a3bbebb0765f4b38e5b1c5b00e
+    windows-amd64: sha256:65c5c0c709a7ca1b357091b10b795b439d8b50e579d3893edab4c7e9b384f435
+    windows-arm64: sha256:1c454eb60c64d481965a165c623ff1ed6cf32d68c6b31f36069c8768d908f093
 
 go_parent_dir: .local/go
