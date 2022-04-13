@@ -16,6 +16,9 @@ The go_parent_dir variable may change from being relative to absolute in the fut
 
 |Version|Description|
 |---|---|
+|1.18.1|- support for 1.18.1|
+||- support for 1.17.9|
+||due to an issue (https://github.com/golang/go/issues/52317) darwin port is currently unavailable|
 |1.18.0|- support for 1.18|
 |1.17.8|- support for 1.17.8|
 ||- support for 1.16.15|
