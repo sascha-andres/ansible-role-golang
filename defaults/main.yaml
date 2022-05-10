@@ -396,8 +396,8 @@ go_checksums:
     windows-amd64: sha256:82752c3313cc6c1e1b5d73743a3ec569b09a14246fc2cb0824cf30f9f42a6005
     windows-arm64: sha256:f04edeae4bfe409d8978919b4c0c81516febc4ff85bcb2c604885910da8f8d55
   '1.18.1':
-    darwin-amd64: sha256:
-    darwin-arm64: sha65:
+    darwin-amd64: sha256:3703e9a0db1000f18c0c7b524f3d378aac71219b4715a6a4c5683eb639f41a4d
+    darwin-arm64: sha65:6d5641a06edba8cd6d425fb0adad06bad80e2afe0fa91b4aa0e5aed1bc78f58e
     linux-amd64: sha256:b3b815f47ababac13810fc6021eb73d65478e0b2db4b09d348eefad9581a2334
     linux-arm64: sha256:56a91851c97fb4697077abbca38860f735c32b38993ff79b088dac46e4735633
     windows-amd64: sha256:c30bc3f1f7314a953fe208bd9cd5e24bd9403392a6c556ced3677f9f70f71fe1
